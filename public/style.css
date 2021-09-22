@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #F8F8F8;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.chat__section {
+    width: 800px;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 20px 35px -7px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.381);
+}
+
+
+.brand {
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+
+
+.message__area{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+#textArea {
+    width: 80%;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 16px;
+    outline: none ;
+    background: #e9e4e4;
+}
+
+.message {
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.incoming {
+    background: #8F8BE8;
+    color: #fff;  
+}
+
+.notification {
+    background: #740396;
+    color: #fff;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.leave{
+    background: #d00d07;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.outgoing {
+    background: #e9eafd;
+    color: #62636e;
+    margin-left: auto;
+}
+
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+#send-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.btn{
+    background: white;
+    border: none;
+}

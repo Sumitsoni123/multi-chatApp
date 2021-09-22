@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chat Application</title>
+</head>
+
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/wassup.png" alt="image">
+            <h1>Wassup !!! <span id="naam" style="font-weight: bold;">username</span></h1>
+            <Button class="button" onClick="handleLogout()">
+                <i class="fas fa-power-off"></i>
+            </Button>
+        </div>
+
+        <div class="message__area">
+            <!-- <div class="incoming message">
+                <h4>rakesh</h4>
+                <p>incoming messages</p>
+            </div>
+            <div class="outgoing message">
+                <h4>rakesh</h4>
+                <p>outgoing messages</p>
+            </div> -->
+        </div>
+
+        <div class="container">
+            <form action="#" id="send-container">
+                <textarea id="textArea" cols="30" rows="1" placeholder="enter message"></textarea>
+                <button class="btn" type="submit"><i class="far fa-paper-plane fa-2x"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
